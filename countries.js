@@ -1,8 +1,27 @@
 const countries= {
+    "sq-AL": "Albania",
     "am-ET": "Amharic",
     "ar-SA": "Arabic",
-    "en-GB": "United Kingdom",
-    "hi-IN": "India",
+    "az-AZ": "Azeri",
+    "be-BY": "Belarusian",
+    "bs-BA": "Bosnia and Herzegovina",
+    "bg-BG": "Bulgarian",
+    "ca-ES": "Catalan",
+    "zh-CN": "Chinese",
+    "cs-CZ": "Czech",
+    
+    "da-DK": "Danish",
+    "nl-BE": "Dutch(Belgium)",
+    "nl-NL": "Dutch(Netherlands)",
+    "dv-MV": "Divehi(Maldives)",
+   
+    "en-GB": "English(UK)",
+    "en-US": "English(US)",
+    "de-DE": "German",
+    "el-GR": "Greek",
+    "es-ES": "Spanish",
+    "hi-IN": "Hindi",
+    "cy-GB": "Welsh",
 }
 /*const bay= {
 "AF": "Afghanistan",
