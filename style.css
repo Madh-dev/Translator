@@ -11,7 +11,7 @@ body{
     background: #203de2;
 }
 .container{
-    width:690px;
+    width:800px;
     background: #fff;
     border-radius: 7px;
     padding:30px;
@@ -28,7 +28,7 @@ body{
     border-left:1px solid #bbb;
     border-radius: 0;
 }
-.text-input textaarea{
+.text-input textarea{
     height: 250px;
     width: 100%;
     border:none;
@@ -42,11 +42,15 @@ body{
 .controls, li, .icons, .icons i{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .controls{
     padding: 12px 15px;
     list-style: none;
+}
+.controls .row{
+    display: flex;
+    flex: 0 0 40% !important;
 }
 .controls .row.from .icons{
     padding-right: 15px;
@@ -57,7 +61,7 @@ body{
     border-left: 1px solid #bbb;
 }
 .controls .icons{
-    width: 38%;
+    width: 28%;
 }
 .controls .icons i{
     width: 50px;
@@ -76,6 +80,8 @@ body{
     color:#9f9f9f;
     font-size: 16px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 .container button{
     width: 100%;
@@ -88,4 +94,88 @@ body{
     font-size: 17px;
     border-radius: 5px;
     background: #203de2;
+}
+
+
+@media only screen and (max-width:992px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #1c5996 !important;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+    }
+    .container{
+        width:75%;
+        background: rgb(255, 255, 255);
+        border-radius: 7px;
+        padding:30px;
+    }
+    .text-input textarea{
+        height: 150px;
+        width: 100%;
+        border:none;
+        outline:none;
+        resize: none;
+        font-size: 18px;
+        border-radius: 5px;
+        background: none;
+        padding: 10px 15px;
+    }
+    .controls .row{
+        flex-direction: column;
+    }
+    .controls{
+        padding: 5px 7px;
+        list-style: none;
+    }
+    .controls .row .icons{
+        order: 2;
+        width: 100%;
+        border-top: 1px solid #bbb;
+        padding:  10px 0;
+    }
+    .controls .row select{
+        order:  1;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    .controls .row.from .icons{
+        margin-right: 1%;
+        padding-right: 1% !important;
+    }
+    .controls .row.to .icons{
+        margin-left: 2%;
+        padding-left: 1% !important;
+    }
+    ::placeholder{
+        font-size: medium;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #1626b9 !important;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+    }
+    .container{
+        width:90%;
+        background: rgb(252, 248, 248);
+        border-radius: 7px;
+        padding:30px;
+    }
+    .controls .row select{
+        border:none;
+        outline: none;
+        font-size: 15px;
+        background: none;
+    }
 }
